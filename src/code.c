@@ -33,10 +33,28 @@
 
 int compare_int_asc(const void *a, const void *b)
 {
-    // TODO
-    (void)a;
-    (void)b;
-    return 0;
+    int x = *(const int *)a;
+    int y = *(const int *)b;
+
+    if(x < y)
+    {
+        return -1;
+    }
+
+    if(x == y)
+    {
+        return 0;
+    }
+
+    if(x > y)
+    {
+        return 1;
+    }
+
+    else
+    {
+        return NULL;
+    }
 }
 
 /*

@@ -13,5 +13,7 @@
 int main(void)
 {
 
+    compare_int_asc(1, 2);
+
     return 0;
 }
