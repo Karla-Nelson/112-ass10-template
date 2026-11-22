@@ -134,7 +134,7 @@ int compare_strptr_asc(const void *a, const void *b)
     const char *x = *(const char * const *)a;
     const char *y = *(const char * const *)b;
 
-    return strcmp(&x, &y);
+    return strcmp(x, y);
 }
 
 /*
